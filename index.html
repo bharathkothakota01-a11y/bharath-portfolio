@@ -1,5 +1,173 @@
 <!DOCTYPE html>
-<html>
-<head><title>Test</title></head>
-<body><h1>Hello</h1></body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharath Kothakota - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .skills, .projects, .contact {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills ul li {
+            background: #e2e2e2;
+            margin: 5px;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .project-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .project-item:last-child {
+            border-bottom: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bharath Kothakota</h1>
+        <p>Software Developer | Web Enthusiast</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="profile">
+            <img src="https://via.placeholder.com/150" alt="Bharath Kothakota Profile Picture">
+            <h2>About Me</h2>
+            <p>Hello! I'm Bharath Kothakota, a passionate software developer with a knack for building engaging web applications. I love to learn new technologies and solve complex problems. My goal is to create efficient, scalable, and user-friendly solutions that make a real impact.</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>Git & GitHub</li>
+                <li>AWS Basics</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Project Alpha</h3>
+                <p>A full-stack web application for task management. Features user authentication, CRUD operations for tasks, and real-time updates.</p>
+                <p><strong>Technologies:</strong> React, Node.js, Express, MongoDB</p>
+                <a href="#" target="_blank">View Project</a> | <a href="#" target="_blank">GitHub Repo</a>
+            </div>
+            <div class="project-item">
+                <h3>Project Beta</h3>
+                <p>An e-commerce platform developed using Django and Python. Includes product catalog, shopping cart, and payment integration.</p>
+                <p><strong>Technologies:</strong> Python, Django, PostgreSQL, Stripe API</p>
+                <a href="#" target="_blank">View Project</a> | <a href="#" target="_blank">GitHub Repo</a>
+            </div>
+            <div class="project-item">
+                <h3>Project Gamma</h3>
+                <p>A responsive personal portfolio website showcasing various projects and skills.</p>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript</p>
+                <a href="#" target="_blank">View Project</a> | <a href="#" target="_blank">GitHub Repo</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            <p>Email: <a href="mailto:bharath.kothakota@example.com">bharath.kothakota@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bharathkothakota" target="_blank">linkedin.com/in/bharathkothakota</a></p>
+            <p>GitHub: <a href="https://github.com/bharathkothakota01" target="_blank">github.com/bharathkothakota01</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Bharath Kothakota. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
 </html>
